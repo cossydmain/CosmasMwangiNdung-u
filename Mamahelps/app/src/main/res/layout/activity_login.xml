@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.mamahelps.mainActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:id="@+id/login_image"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/loginic"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_Email"
+        android:inputType="textPhonetic"
+        android:layout_below="@id/login_image"
+        android:hint="PhoneNumber/Email"
+        android:textColorHint="@color/colorPrimary"
+        android:drawableLeft="@drawable/user"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"/>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:hint="Password"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/paswordlogin"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/login_password"
+        android:layout_below="@id/login_Email"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:hint="Confirm password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/password"
+        android:textColorHint="@color/colorPrimary"
+        android:id="@+id/login_confirm"
+        android:layout_below="@id/login_password"
+        android:layout_alignLeft="@+id/login_password"
+        android:layout_alignStart="@+id/login_password" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/login_login"
+        android:text="LogIn"
+        android:onClick="clickable"
+        android:shadowColor="@color/colorAccent"
+        style="@style/Base.TextAppearance.AppCompat.Body2"
+        android:layout_below="@id/login_confirm"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_login"
+        android:text="Already Registered?? Sign up  Here."
+        style="@style/Base.TextAppearance.AppCompat.Body2"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/login_login"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightmaroon"
+    tools:context="com.example.user.mamahelps.Registration">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="140dp"
+        android:layout_height="132dp"
+        android:id="@+id/rg_img"
+        android:src="@drawable/login"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:id="@+id/rg_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="FirstName"
+        android:inputType="textAutoComplete"
+        android:textColorHint="@color/colorPrimary"
+        android:drawableLeft="@drawable/user"
+        android:layout_below="@+id/rg_img"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        />
+    <EditText
+        android:id="@+id/rg_edt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="SurName"
+        android:inputType="textAutoComplete"
+        android:textColorHint="@color/colorPrimary"
+        android:drawableLeft="@drawable/user"
+        android:layout_below="@+id/rg_edt"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        />
+    <EditText
+        android:id="@+id/rg_edt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textAutoComplete"
+        android:textColorHint="@color/colorPrimary"
+        android:drawableLeft="@drawable/password"
+        android:layout_below="@+id/rg_edt2"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        />
+    <EditText
+        android:id="@+id/rg_edt4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Location/Area"
+        android:inputType="textAutoComplete"
+        android:textColorHint="@color/colorPrimary"
+        android:drawableLeft="@mipmap/ic_locat"
+        android:layout_below="@+id/rg_edt3"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/rg_txtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CODE??"
+        android:inputType="textAutoComplete"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_below="@+id/rg_edt4"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:text="Sign In"
+        android:textColor="@color/colorAccent"
+        android:onClick="clickable"
+        android:id="@+id/signin"
+        android:layout_below="@+id/rg_txtv"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
